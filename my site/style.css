@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans;
+    color: white;
+}
+
+.one{
+    /* used linear gradient for darken the background image */
+    background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+span{
+    color: orangered;
+}
+
+.list{
+    list-style: none;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1.5em;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.round{
+    border-radius: 50%;
+}
+
+
+.list_item{
+    margin-top: 3em;
+}
+
+i{
+    opacity: .9;
+    display: inline-block;
+}
+
+i:hover,
+i:focus{
+    opacity: 1;
+    cursor: pointer;
+    color: gold;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.mail{
+    font-size: 13px;
+}
+
+footer p{
+    color: black;
+    padding: .75em 0;
+    width: 100%;
+}
+
+.connect{
+    background: yellow;
+    
+}
+
+.icons{
+    padding: .75em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.socail-media-icons{
+    width: 30px;
+    list-style: none;
+    transition: width .5s ease-in-out;
+}
+
+.socail-media-icons:hover{
+    width: 50px;
+}
+
+.socail-media-icons img{
+    width: 100%;
+}
+
+
+
+/* media quiers starts */
+
+@media(min-width:450px){
+    .one{
+        height: 110vh;
+    }
+    .face{
+        max-width: 300px;
+    }
+}
+
+@media(min-width:725px){
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 3em 0 0 0;
+        /* border: 1px solid red; */
+        /* height: 100%; */
+    }
+
+    .face{
+        max-width: 300px;
+    }
+}
+
+/* media quiers ends */
